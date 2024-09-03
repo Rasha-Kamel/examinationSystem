@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in || Sign up from</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="signUp-signIn">
+            <form action="./logIn.html" class="signUp-form" method="post">
+            <!-- <form action="./logIn.html" class="signUp-form"> -->
+                <h2 class="title">Sign Up</h2>
+                <div class="firstScreen">
+                    <div class="input-field">
+                        <input type="text" id="fName" name="f-name" placeholder="First Name">
+                    </div> 
+                    <div class="msgError">
+                        <p id="fName-error"></p>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="lName" name="l-name" placeholder="Last Name">
+                    </div> 
+                    <div class="msgError">
+                        <p id="lName-error"></p>
+                    </div>
+                </div>
+                <div class="secondScreen">
+                    <div class="input-field">
+                        <input type="email" id="email" name="email" placeholder="Email" autocomplete="off">
+                    </div>
+                    <div class="msgError">
+                        <p id="email-error"></p>
+                    </div>
+                    <div class="input-field">
+                        <input type="file" id="img" name="img">
+                    </div>
+                    <div class="msgError">
+                        <p id="img-error"></p>
+                    </div>
+                </div>
+                <div class="thirdScreen">
+                    <div class="input-field">
+                        <input type="password" id="pass" name="pass" placeholder="Password">
+                    </div> 
+                    <div class="msgError">
+                        <p id="pass-error"></p>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="re-pass" name="re-pass" placeholder="Re-enter Password">
+                    </div> 
+                    <div class="msgError">
+                        <p id="rePass-error"></p>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn" id="btnNext" type="submit">NEXT</button>
+                    <button class="btn" id="btnPrev">Previous</button>
+                </div>
+            </form>
+
+            <div class="signUp-image">
+                <img src="./images/sign_up_image.jpg" alt="" id="signUpImg">
+            </div>
+
+            
+        </div>
+
+   </div> 
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

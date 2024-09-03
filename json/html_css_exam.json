@@ -1,0 +1,157 @@
+
+{
+    "comment": "This JSON file contains MCQs for HTML and CSS. " ,
+    "questions": [ 
+      {
+        "question": "What does HTML stand for?",
+        "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Tool Markup Language"],
+        "correct_answer": "Hyper Text Markup Language"
+      },
+      {
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "options": ["<script>", "<style>", "<css>", "<link>"],
+        "correct_answer": "<style>"
+      },
+      {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "options": ["style", "class", "id", "css"],
+        "correct_answer": "style"
+      },
+      {
+        "question": "Which property is used to change the background color in CSS?",
+        "options": ["background-color", "color", "bgcolor", "background"],
+        "correct_answer": "background-color"
+      },
+      {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": ["<break>", "<lb>", "<br>", "<b>"],
+        "correct_answer": "<br>"
+      },
+      {
+        "question": "Which HTML tag is used to define an unordered list?",
+        "options": ["<ol>", "<ul>", "<li>", "<list>"],
+        "correct_answer": "<ul>"
+      },
+      {
+        "question": "How do you add a comment in HTML?",
+        "options": ["<!-- Comment -->", "// Comment", "/* Comment */", "' Comment"],
+        "correct_answer": "<!-- Comment -->"
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "options": ["font-style", "text-size", "font-size", "text-style"],
+        "correct_answer": "font-size"
+      },
+      {
+        "question": "What is the default display property of <div>?",
+        "options": ["inline", "block", "inline-block", "none"],
+        "correct_answer": "block"
+      },
+      {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "options": ["text-color", "fgcolor", "color", "font-color"],
+        "correct_answer": "color"
+      },
+      {
+        "question": "How do you create a hyperlink in HTML?",
+        "options": ["<a href='url'>link text</a>", "<link url='link'>link text</link>", "<a>link text</a>", "<href url='link'>link text</href>"],
+        "correct_answer": "<a href='url'>link text</a>"
+      },
+      {
+        "question": "How do you make a list that lists its items with numbers?",
+        "options": ["<ul>", "<ol>", "<list>", "<dl>"],
+        "correct_answer": "<ol>"
+      },
+      {
+        "question": "Which CSS property is used to change the font of an element?",
+        "options": ["font-style", "font-family", "text-style", "text-family"],
+        "correct_answer": "font-family"
+      },
+      {
+        "question": "What is the correct HTML element for the largest heading?",
+        "options": ["<h6>", "<head>", "<heading>", "<h1>"],
+        "correct_answer": "<h1>"
+      },
+      {
+        "question": "Which property is used to create space between the border and inner content of an element?",
+        "options": ["margin", "padding", "spacing", "border"],
+        "correct_answer": "padding"
+      },
+      {
+        "question": "Which HTML tag is used to define a table row?",
+        "options": ["<td>", "<th>", "<tr>", "<table>"],
+        "correct_answer": "<tr>"
+      },
+      {
+        "question": "How can you make a bulleted list in HTML?",
+        "options": ["<list>", "<ol>", "<ul>", "<dl>"],
+        "correct_answer": "<ul>"
+      },
+      {
+        "question": "What is the correct way to link an external stylesheet in HTML?",
+        "options": ["<stylesheet>style.css</stylesheet>", "<link rel='stylesheet' href='style.css'>", "<style src='style.css'>", "<css href='style.css'>"],
+        "correct_answer": "<link rel='stylesheet' href='style.css'>"
+      },
+      {
+        "question": "Which CSS property is used to change the left margin of an element?",
+        "options": ["margin-left", "padding-left", "indent", "left"],
+        "correct_answer": "margin-left"
+      },
+      {
+        "question": "How do you create a checkbox in HTML?",
+        "options": ["<checkbox>", "<input type='checkbox'>", "<input type='check'>", "<input type='box'>"],
+        "correct_answer": "<input type='checkbox'>"
+      },
+      {
+        "question": "Which HTML tag is used to define a footer for a document or section?",
+        "options": ["<footer>", "<bottom>", "<section>", "<foot>"],
+        "correct_answer": "<footer>"
+      },
+      {
+        "question": "Which property is used to align text in CSS?",
+        "options": ["text-align", "font-align", "align", "text-decoration"],
+        "correct_answer": "text-align"
+      },
+      {
+        "question": "Which HTML element is used to specify a title for the document?",
+        "options": ["<meta>", "<title>", "<head>", "<h1>"],
+        "correct_answer": "<title>"
+      },
+      {
+        "question": "How do you create a radio button in HTML?",
+        "options": ["<input type='radio'>", "<radio>", "<input type='button'>", "<input type='radiobutton'>"],
+        "correct_answer": "<input type='radio'>"
+      },
+      {
+        "question": "Which CSS property is used to add shadows to elements?",
+        "options": ["shadow", "text-shadow", "box-shadow", "element-shadow"],
+        "correct_answer": "box-shadow"
+      },
+      {
+        "question": "How do you make text bold in HTML?",
+        "options": ["<strong>", "<b>", "<bold>", "<important>"],
+        "correct_answer": "<b>"
+      },
+      {
+        "question": "Which CSS property is used to change the font size of text?",
+        "options": ["font-height", "text-size", "font-size", "text-height"],
+        "correct_answer": "font-size"
+      },
+      {
+        "question": "What does CSS stand for?",
+        "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+        "correct_answer": "Cascading Style Sheets"
+      },
+      {
+        "question": "Which HTML tag is used to define a hyperlink?",
+        "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+        "correct_answer": "<a>"
+      },
+      {
+        "question": "Which property is used to change the color of text in CSS?",
+        "options": ["text-color", "color", "font-color", "text-style"],
+        "correct_answer": "color"
+      }
+    ]
+  }
+  
