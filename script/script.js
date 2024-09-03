@@ -38,7 +38,8 @@ btnNext.addEventListener('click',function(e){
         localStorage.setItem('f-name', firstName.value);
         localStorage.setItem('l-name', lastName.value);
         localStorage.setItem('email', email.value);
-        localStorage.setItem('img', image.value);
+        localStorage.setItem('image', image.value);
+        // console.log(image.value);
         localStorage.setItem('pass', password.value);
         localStorage.setItem('re-pass', rePassword.value);
        
