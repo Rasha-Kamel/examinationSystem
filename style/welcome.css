@@ -5,16 +5,71 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     height: 100vh;
-    background-image: url("../images/welcomePage.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
     background-color: #f4f7fc;
-    background-size: 50%;
-    /* background: linear-gradient(to top, #89cfc1, #dbf0eb); */
 }
+
 h1 {
     color: #2a7962;
+    font-size: 40px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.message {
+    margin-top:5%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionData {
+    margin-top: 2% 0;
+
+    font-size: 20px;
+    color: #2a7962 ;
+    font-weight: bold;
+    text-align: center;
+}
+
+.studentName {
+    color: #f5a46f;
+    font-size: 25px;
+    /* margin-bottom: 10px; */
+}
+
+span {
+    color: #f5a46f;
+}
+
+p {
+    margin: 5px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #32be8f;
+    color: white;
+    font-size: 20px;
+    text-align: center;  
+}
+
+.btn:hover {
+    background: #2a7962;
+}
+
