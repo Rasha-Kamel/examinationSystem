@@ -8,9 +8,9 @@
         "correct_answer": "Hyper Text Markup Language"
       },
       {
-        "question": "Which HTML tag is used to define an internal style sheet?",
-        "options": ["<script>", "<style>", "<css>", "<link>"],
-        "correct_answer": "<style>"
+      "question": "How do you make a list that lists its items with squares?",
+      "options": ["list-style-type: square;", "list-type: square;", "list: square;", "list-style: square;"],
+      "correct_answer": "list-style-type: square;"
       },
       {
         "question": "Which HTML attribute is used to define inline styles?",
@@ -23,19 +23,19 @@
         "correct_answer": "background-color"
       },
       {
-        "question": "What is the correct HTML element for inserting a line break?",
-        "options": ["<break>", "<lb>", "<br>", "<b>"],
-        "correct_answer": "<br>"
+        "question": "Which CSS property is used to set the space between the lines of text?",
+        "options": ["line-height", "spacing", "line-spacing", "text-spacing"],
+        "correct_answer": "line-height"
       },
       {
-        "question": "Which HTML tag is used to define an unordered list?",
-        "options": ["<ol>", "<ul>", "<li>", "<list>"],
-        "correct_answer": "<ul>"
+        "question": "Which CSS property is used to make the text bold?",
+        "options": ["font-weight", "font-style", "text-bold", "font-bold"],
+        "correct_answer": "font-weight"
       },
       {
         "question": "How do you add a comment in HTML?",
-        "options": ["<!-- Comment -->", "// Comment", "/* Comment */", "' Comment"],
-        "correct_answer": "<!-- Comment -->"
+        "options": ["&lt;!-- Comment --&gt", "// Comment", "/* Comment */", "' Comment"],
+        "correct_answer": "&lt;!-- Comment --&gt"
       },
       {
         "question": "Which CSS property controls the text size?",
@@ -53,14 +53,14 @@
         "correct_answer": "color"
       },
       {
-        "question": "How do you create a hyperlink in HTML?",
-        "options": ["<a href='url'>link text</a>", "<link url='link'>link text</link>", "<a>link text</a>", "<href url='link'>link text</href>"],
-        "correct_answer": "<a href='url'>link text</a>"
+        "question": "How do you make each word in a text start with a capital letter in CSS?",
+        "options": ["text-transform: capitalize;", "text-transform: uppercase;", "text-transform: lowercase;", "text-transform: capitalize-words;"],
+        "correct_answer": "text-transform: capitalize;"
       },
       {
         "question": "How do you make a list that lists its items with numbers?",
-        "options": ["<ul>", "<ol>", "<list>", "<dl>"],
-        "correct_answer": "<ol>"
+        "options": ["&lt; ul &gt", "&lt; ol &gt", "&lt; list &gt", "&lt; dl &gt"],
+        "correct_answer": "&lt; ol& gt"
       },
       {
         "question": "Which CSS property is used to change the font of an element?",
@@ -69,8 +69,8 @@
       },
       {
         "question": "What is the correct HTML element for the largest heading?",
-        "options": ["<h6>", "<head>", "<heading>", "<h1>"],
-        "correct_answer": "<h1>"
+        "options": ["&lt; h6 &gt", "&lt; head &gt", "&lt; heading &gt", "&lt; h1 &gt"],
+        "correct_answer": "&lt; h1 &gt"
       },
       {
         "question": "Which property is used to create space between the border and inner content of an element?",
@@ -79,18 +79,18 @@
       },
       {
         "question": "Which HTML tag is used to define a table row?",
-        "options": ["<td>", "<th>", "<tr>", "<table>"],
-        "correct_answer": "<tr>"
+        "options": ["&lt; td &gt", "&lt; th &gt", "&lt; tr &gt", "&lt; table &gt"],
+        "correct_answer": "&lt; tr &gt"
       },
       {
-        "question": "How can you make a bulleted list in HTML?",
-        "options": ["<list>", "<ol>", "<ul>", "<dl>"],
-        "correct_answer": "<ul>"
+      "question": "Which CSS property is used to change the left margin of an element?",
+      "options": ["padding-left", "margin-left", "indent", "spacing-left"],
+      "correct_answer": "margin-left"
       },
       {
-        "question": "What is the correct way to link an external stylesheet in HTML?",
-        "options": ["<stylesheet>style.css</stylesheet>", "<link rel='stylesheet' href='style.css'>", "<style src='style.css'>", "<css href='style.css'>"],
-        "correct_answer": "<link rel='stylesheet' href='style.css'>"
+        "question": "How do you make each word in a text start with a capital letter in CSS?",
+        "options": ["text-transform: capitalize;", "text-transform: uppercase;", "text-transform: lowercase;", "text-transform: capitalize-words;"],
+        "correct_answer": "text-transform: capitalize;"
       },
       {
         "question": "Which CSS property is used to change the left margin of an element?",
@@ -98,14 +98,14 @@
         "correct_answer": "margin-left"
       },
       {
-        "question": "How do you create a checkbox in HTML?",
-        "options": ["<checkbox>", "<input type='checkbox'>", "<input type='check'>", "<input type='box'>"],
-        "correct_answer": "<input type='checkbox'>"
-      },
+        "question": "What is the correct HTML element for playing video files?",
+        "options": ["&lt; media &gt", "&lt; video &gt", "&lt; movie &gt", "&lt; play &gt"],
+        "correct_answer": "&lt; video &gt"
+     },
       {
-        "question": "Which HTML tag is used to define a footer for a document or section?",
-        "options": ["<footer>", "<bottom>", "<section>", "<foot>"],
-        "correct_answer": "<footer>"
+        "question": "Which CSS property is used to set the space between the lines of text?",
+        "options": ["line-height", "spacing", "line-spacing", "text-spacing"],
+        "correct_answer": "line-height"
       },
       {
         "question": "Which property is used to align text in CSS?",
@@ -113,24 +113,24 @@
         "correct_answer": "text-align"
       },
       {
-        "question": "Which HTML element is used to specify a title for the document?",
-        "options": ["<meta>", "<title>", "<head>", "<h1>"],
-        "correct_answer": "<title>"
+      "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      "options": ["title", "alt", "src", "longdesc"],
+      "correct_answer": "alt"
       },
       {
-        "question": "How do you create a radio button in HTML?",
-        "options": ["<input type='radio'>", "<radio>", "<input type='button'>", "<input type='radiobutton'>"],
-        "correct_answer": "<input type='radio'>"
-      },
+      "question": "Which CSS property is used to change the text alignment of an element?",
+      "options": ["text-align", "align", "text-align-center", "align-text"],
+      "correct_answer": "text-align"
+    },
       {
         "question": "Which CSS property is used to add shadows to elements?",
         "options": ["shadow", "text-shadow", "box-shadow", "element-shadow"],
         "correct_answer": "box-shadow"
       },
       {
-        "question": "How do you make text bold in HTML?",
-        "options": ["<strong>", "<b>", "<bold>", "<important>"],
-        "correct_answer": "<b>"
+        "question": "Which CSS property is used to set the width of an element?",
+        "options": ["width", "height", "size", "length"],
+        "correct_answer": "width"
       },
       {
         "question": "Which CSS property is used to change the font size of text?",
@@ -143,9 +143,9 @@
         "correct_answer": "Cascading Style Sheets"
       },
       {
-        "question": "Which HTML tag is used to define a hyperlink?",
-        "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
-        "correct_answer": "<a>"
+        "question": "How do you select an element with id 'demo' in CSS?",
+        "options": [".demo", "#demo", "*demo", "demo"],
+        "correct_answer": "#demo"
       },
       {
         "question": "Which property is used to change the color of text in CSS?",
