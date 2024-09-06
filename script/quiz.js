@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 })     
             })
         })
-        .catch((error) =>{
-            console.error(error);
-        });
+        // .catch((error) =>{
+        //     console.error(error);
+        // });
 });
