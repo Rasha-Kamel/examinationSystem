@@ -1,5 +1,5 @@
-const btnNext = document.getElementById('btnNext');
-const btnPrev = document.getElementById('btnPrev');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
 const firstScreen = document.querySelector('.firstScreen');
 const secondScreen = document.querySelector('.secondScreen');
 const thirdScreen = document.querySelector('.thirdScreen');
@@ -7,7 +7,7 @@ const form = document.querySelector(".signUp-form");
 
 
 counter = 0
-btnNext.addEventListener('click',function(e){
+nextBtn.addEventListener('click',function(e){
      // Validate current screen before proceeding
      if (counter == 0 && !validateFirstScreen()) return;
      if (counter == 1 && !validateSecondScreen()) return;
@@ -16,15 +16,15 @@ btnNext.addEventListener('click',function(e){
     counter++;
     if (counter == 1 && validateFirstScreen()) {
         e.preventDefault();
-        btnPrev.style.display = 'block';
+        prevBtn.style.display = 'block';
         firstScreen.style.display = 'none';
         secondScreen.style.display = 'block';
 
     } 
     if (counter == 2 && validateSecondScreen()) {
         e.preventDefault();
-        btnNext.textContent ="Register";
-        btnPrev.style.display = 'block';
+        nextBtn.textContent ="Register";
+        prevBtn.style.display = 'block';
         firstScreen.style.display = 'none';
         secondScreen.style.display = 'none';
         thirdScreen.style.display = 'block';
@@ -47,20 +47,20 @@ btnNext.addEventListener('click',function(e){
 
 
 counterprev = 0
-btnPrev.addEventListener('click',function(e){
+prevBtn.addEventListener('click',function(e){
 
 
     counterprev++;
     counter--; //this for the div number firstScreen Second ..
     e.preventDefault();
     if (counter == 0) {
-        btnNext.textContent ="Next";
+        nextBtn.textContent ="Next";
         secondScreen.style.display = 'none';
         firstScreen.style.display = 'block';
-        btnPrev.style.display = 'none'; 
+        prevBtn.style.display = 'none'; 
     } 
     if (counter == 1 ) {
-        btnNext.textContent ="Next";
+        nextBtn.textContent ="Next";
         firstScreen.style.display = 'none';
         secondScreen.style.display = 'block';
         thirdScreen.style.display = 'none';

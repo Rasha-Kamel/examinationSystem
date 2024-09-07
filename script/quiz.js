@@ -1,7 +1,8 @@
-
-
-
-const containerDiv = document.querySelector(".container")
+const containerDiv = document.querySelector(".container");
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn'); 
+let currentQIndex = 0;
+let randomQuestions = [];
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,22 +15,81 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then((data)=>{
-            data.questions.forEach((quiz,index)=>{
-                const quesionDiv = document.createElement('div');
-                quesionDiv.classList.add("qTitle");        
-                quesionDiv.innerHTML = `
-                    <h2>Q${index + 1}: ${quiz.question}</h2>            
-                `;
-                containerDiv.appendChild(quesionDiv);
-                quiz.options.forEach(option=>{
-                    const optParagraph = document.createElement('p');
-                    optParagraph.classList.add("choose"); 
-                    optParagraph.innerHTML = `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
-                    quesionDiv.appendChild(optParagraph);
-                })     
-            })
+            //specefic 10 random questions
+            randomQuestions = getRandomQ(data.questions, 10);
+             // Display the first question
+             displayQuestion(currentQIndex);
         })
-        // .catch((error) =>{
-        //     console.error(error);
-        // });
+        .catch((error) =>{
+            console.error(error);
+        });   
+});
+
+// Function to get a specified number of random questions
+function getRandomQ(questions, numQ) {
+    let randomQuestions = [];
+    let indexes = new Set();   
+    while (randomQuestions.length < numQ) {
+        let randomIndex = Math.floor(Math.random() * questions.length);
+        // Ensure no duplicate questions
+        if (!indexes.has(randomIndex)) {
+            randomQuestions.push(questions[randomIndex]);
+           indexes.add(randomIndex);
+        }
+    }   
+    return randomQuestions;
+};
+
+// Function to display a question
+function displayQuestion(index) {
+    // Clear the container
+    containerDiv.innerHTML = '';
+
+    const quiz = randomQuestions[index];
+    const questionDiv = document.createElement('div');
+    questionDiv.classList.add("qTitle");
+    questionDiv.innerHTML = `
+        <h2>Q${index + 1}: ${quiz.question}</h2>
+    `;
+    containerDiv.appendChild(questionDiv);
+    //to display answers of each question
+    quiz.options.forEach(option => {
+        const optParagraph = document.createElement('p');
+        optParagraph.classList.add("choose");
+        optParagraph.innerHTML = `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
+        questionDiv.appendChild(optParagraph);
+    });
+};
+
+prevBtn.style.display ='none';
+nextBtn.addEventListener('click', () => {   
+    currentQIndex++;
+    prevBtn.style.display ='block';
+    if(currentQIndex == 9){
+        nextBtn.style.display ='none';   
+    }
+    if (currentQIndex < randomQuestions.length) {
+        displayQuestion(currentQIndex);
+    } else {
+        // Optional: You can disable the button or show a message when there are no more questions
+        nextBtn.disabled = true;
+        containerDiv.innerHTML = '<p>No more questions!</p>';
+    }
+});
+
+prevBtn.addEventListener('click', () => {
+    currentQIndex--;
+    nextBtn.disabled = false;
+    nextBtn.style.display ='block';
+    if (currentQIndex == 0){
+        prevBtn.style.display ='none';   
+    }
+    if (currentQIndex < randomQuestions.length) {
+        displayQuestion(currentQIndex);    
+    } else {
+        // Optional: You can disable the button or show a message when there are no more questions
+        prevBtn.disabled = true;
+        containerDiv.innerHTML = '<p>No more questions!</p>';
+    }
+
 });

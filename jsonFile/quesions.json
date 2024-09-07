@@ -83,9 +83,9 @@
         "correct_answer": "&lt; tr &gt"
       },
       {
-      "question": "Which CSS property is used to change the left margin of an element?",
-      "options": ["padding-left", "margin-left", "indent", "spacing-left"],
-      "correct_answer": "margin-left"
+      "question": "Which CSS property is used to change the right margin of an element?",
+      "options": ["padding-right", "margin-right", "indent", "spacing-right"],
+      "correct_answer": "margin-right"
       },
       {
         "question": "How do you make each word in a text start with a capital letter in CSS?",

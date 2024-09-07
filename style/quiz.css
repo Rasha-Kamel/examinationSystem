@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  padding: 0 5%;
+}
+
+.result {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #2196f3, #673ab7);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  height: calc(100vh - 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.result img{
+    margin: 40px 0;
+}
+.result span {
+  font-weight: 900;
+}
+.qTitle {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0px 5px 7px #00000024;
+}
+
+.qTitle div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 10px; */
+}
+.qTitle div p {
+  margin: 10px;
+}
+.qTitle div p label {
+  padding: 20px 10px;
+  cursor: pointer;
+  border: 2px dashed #1e1e1e97;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px -1px #00000024;
+}
+.qTitle div p label input {
+  display: none;
+}
+.qTitle div p label:has(input:checked) {
+  color: #fff;
+  background: #2196f3;
+}
+
+button {
+  outline: none;
+  border: 2px solid #2196f3;
+  padding: 7px 15px;
+  border-radius: 7px;
+  background: none;
+  color: #2196f3;
+  font-size: 1.1rem;
+  margin: 0 10px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background: #2196f3;
+  color: #fff;
+}
