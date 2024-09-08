@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then((data)=>{
             //specefic 10 random questions
             randomQuestions = getRandomQ(data.questions, 10);
-             // Display the first question
+             // Display questions
              displayQuestion(currentQIndex);
         })
         .catch((error) =>{
@@ -56,10 +56,29 @@ function displayQuestion(index) {
     quiz.options.forEach(option => {
         const optParagraph = document.createElement('p');
         optParagraph.classList.add("choose");
-        optParagraph.innerHTML = `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
+        optParagraph.innerHTML = `
+            <label>
+                <input type="radio" class="radio" name="question${index}" value="${option}"> ${option}
+            </label>
+        `;
+        optParagraph.querySelector('.radio').addEventListener('click', function () {
+            checkAnswer(option, quiz.correct_answer,index);
+        });
         questionDiv.appendChild(optParagraph);
     });
 };
+
+// Function to check the selected answer and update the question status
+//index for current question
+function checkAnswer(selectedOption, correctAnswer, index) {
+    if (selectedOption === correctAnswer) {
+        randomQuestions[index].right = true;
+        console.log("Correct!");
+    } else {
+        randomQuestions[index].right = false;
+        console.log("Wrong!");
+    }
+}
 
 prevBtn.style.display ='none';
 nextBtn.addEventListener('click', () => {   
@@ -93,3 +112,4 @@ prevBtn.addEventListener('click', () => {
     }
 
 });
+
