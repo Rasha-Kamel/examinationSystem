@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then((data)=>{
             //specefic 10 random questions
             randomQuestions = getRandomQ(data.questions, 10);
-             // Display questions
              displayQuestion(currentQIndex);
         })
         .catch((error) =>{
@@ -40,7 +39,7 @@ function getRandomQ(questions, numQ) {
     return randomQuestions;
 };
 
-// Function to display a question
+
 function displayQuestion(index) {
     // Clear the container
     containerDiv.innerHTML = '';
@@ -78,7 +77,7 @@ function checkAnswer(selectedOption, correctAnswer, index) {
         randomQuestions[index].right = false;
         console.log("Wrong!");
     }
-}
+};
 
 prevBtn.style.display ='none';
 nextBtn.addEventListener('click', () => {   
