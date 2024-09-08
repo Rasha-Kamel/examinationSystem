@@ -1,4 +1,4 @@
-const containerDiv = document.querySelector(".container");
+const contentDiv = document.querySelector(".content");
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn'); 
 let currentQIndex = 0;
@@ -42,7 +42,7 @@ function getRandomQ(questions, numQ) {
 
 function displayQuestion(index) {
     // Clear the container
-    containerDiv.innerHTML = '';
+    contentDiv.innerHTML = '';
 
     const quiz = randomQuestions[index];
     const questionDiv = document.createElement('div');
@@ -50,7 +50,7 @@ function displayQuestion(index) {
     questionDiv.innerHTML = `
         <h2>Q${index + 1}: ${quiz.question}</h2>
     `;
-    containerDiv.appendChild(questionDiv);
+    contentDiv.appendChild(questionDiv);
     //to display answers of each question
     quiz.options.forEach(option => {
         const optParagraph = document.createElement('p');
@@ -79,36 +79,55 @@ function checkAnswer(selectedOption, correctAnswer, index) {
     }
 };
 
-prevBtn.style.display ='none';
+// Set the initial state
+prevBtn.disabled = true;  // Disable the Previous button on the first question
+nextBtn.disabled = false; // Ensure the Next button is enabled initially
+
 nextBtn.addEventListener('click', () => {   
     currentQIndex++;
-    prevBtn.style.display ='block';
-    if(currentQIndex == 9){
-        nextBtn.style.display ='none';   
+    // Enable the Previous button when moving past the first question
+    prevBtn.disabled = false;
+
+    // If we've reached the last question, disable the Next button
+    if (currentQIndex == randomQuestions.length - 1) {
+        nextBtn.disabled = true;
+    } else {
+        nextBtn.disabled = false;
     }
+
+    // Display the current question
     if (currentQIndex < randomQuestions.length) {
         displayQuestion(currentQIndex);
-    } else {
-        // Optional: You can disable the button or show a message when there are no more questions
-        nextBtn.disabled = true;
-        containerDiv.innerHTML = '<p>No more questions!</p>';
     }
 });
 
 prevBtn.addEventListener('click', () => {
     currentQIndex--;
+    // Enable the Next button when moving back from the last question
     nextBtn.disabled = false;
-    nextBtn.style.display ='block';
-    if (currentQIndex == 0){
-        prevBtn.style.display ='none';   
+
+    // If we're back at the first question, disable the Previous button
+    if (currentQIndex == 0) {
+        prevBtn.disabled = true;
+    } else {
+        prevBtn.disabled = false;
     }
+    // Display the current question
     if (currentQIndex < randomQuestions.length) {
         displayQuestion(currentQIndex);    
-    } else {
-        // Optional: You can disable the button or show a message when there are no more questions
-        prevBtn.disabled = true;
-        containerDiv.innerHTML = '<p>No more questions!</p>';
     }
-
 });
 
+const submitBtn = document.getElementById('submit-btn');
+submitBtn.addEventListener('click', () => {
+    // Calculate the score
+    var count = 0;
+    randomQuestions.forEach(e => {
+        if (e.right) {
+            count++;
+        }
+    });
+    localStorage.setItem('score', count);
+    localStorage.setItem('total', randomQuestions.length);
+    window.location.href = 'result.html';
+});

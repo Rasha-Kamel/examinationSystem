@@ -76,3 +76,15 @@ button:hover {
   background: #2196f3;
   color: #fff;
 }
+
+/* Button styling when disabled (not active) */
+button:disabled {
+  background-color: #cccccc;  /* Gray background */
+  cursor: not-allowed;  /* Default cursor indicating it's not clickable */
+}
+
+/* Button hover effect when disabled */
+button:disabled:hover {
+  background-color: #cccccc;  /* Keep the background gray */
+  position: relative;
+}
