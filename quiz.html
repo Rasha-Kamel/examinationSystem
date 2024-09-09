@@ -10,10 +10,35 @@
     <div class="content">
     </div>
 
+    <div class="btn">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+    
+    <aside>
+        <div>
+            <img src="" id="student-img" alt="Student Image" class="student-image">
+            <p class="student-name">Student Name</p>
+        </div>
+        <div id="timer">5:00</div>
+        <ul id="sidBarQ">
 
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
-    <button id="submit-btn">Submit</button>
+        </ul>
+        <button id="submit-btn">Submit</button>
+    </aside>
+
+   
+    <script>
+        let fName = localStorage.getItem('f-name');
+        let lName = localStorage.getItem('l-name');
+        let studentImg = localStorage.getItem('image');
+        let studentImage = document.getElementById("student-img");
+        studentImage.src = studentImg; 
+        document.querySelector(".student-name").innerText = `
+            ${fName} ${lName}
+       `;
+    </script>
+   
     <script src="./script/quiz.js"></script>
 </body>
 </html>

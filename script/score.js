@@ -3,11 +3,26 @@
    const total = localStorage.getItem('total');
    var fName = localStorage.getItem('f-name');
    var lName = localStorage.getItem('l-name');
+   var secLeft = localStorage.getItem('sec-left');
+   var minLeft = localStorage.getItem('min-left');
+   const scoreDiv =  document.getElementById('score');
+   console.log(minLeft)
+   console.log(secLeft)
 
-    document.getElementById('score').innerText = `
-    Hi ${fName} ${lName}
-    
-    Your Score Is : 
-    ${score}/ ${total}
-    `;
-  
+
+  if (secLeft==0 && minLeft==0){
+   
+   scoreDiv.innerText = `
+   Your Time Is Out
+   
+   Your Score Is : 
+   ${score}/ ${total}
+   `;
+  }else{
+   scoreDiv.innerText = `
+   Hi ${fName} ${lName}
+   
+   Your Score Is : 
+   ${score}/ ${total}
+   `;
+  }

@@ -95,7 +95,8 @@ form ,.signUp-image{
     outline: none;
     background-color: #32be8f;
     color: white;
-    font-weight: 500;   
+    font-weight: 500; 
+  
 }
 
 .btn:hover {
@@ -105,7 +106,7 @@ form ,.signUp-image{
 .secondScreen, .thirdScreen {
     display: none;
 }
-#btnPrev {
+#prevBtn{
     display: none;
 }
 

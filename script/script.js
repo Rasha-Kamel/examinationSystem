@@ -30,18 +30,26 @@ nextBtn.addEventListener('click',function(e){
         thirdScreen.style.display = 'block';
 
     }
+      // Save the fname&lname in localStorage.
+      localStorage.setItem('f-name', firstName.value);
+      localStorage.setItem('l-name', lastName.value);
+      localStorage.setItem('email', email.value);
+      localStorage.setItem('image', image.value);
+
+      const reader = new FileReader();
+      reader.readAsDataURL(image.files[0]);
+      reader.addEventListener("load", function () {
+          localStorage.setItem("image", reader.result);
+      }, false);
+      
+      localStorage.setItem('pass', password.value);
+      localStorage.setItem('re-pass', rePassword.value);
    
-    // if (counter == 3 && validateSecondScreen()) {
-    //     window.location.href = "./logIn.html";
-    // }
-        // Save the fname&lname in localStorage.
-        localStorage.setItem('f-name', firstName.value);
-        localStorage.setItem('l-name', lastName.value);
-        localStorage.setItem('email', email.value);
-        localStorage.setItem('image', image.value);
-        // console.log(image.value);
-        localStorage.setItem('pass', password.value);
-        localStorage.setItem('re-pass', rePassword.value);
+    if (counter == 3 && validateSecondScreen()) {
+        e.preventDefault();
+        window.location.href = "./logIn.html";
+    }
+      
        
 });
 

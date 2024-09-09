@@ -19,7 +19,7 @@ btn.addEventListener("click",function(event){
     event.preventDefault();
     msgError.style.display = "none";
    if (validEmail() && validPassword()){
-    window.location.replace("./welcome.html");
+    window.location.href = "./welcome.html";
    };
    
 

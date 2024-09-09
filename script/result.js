@@ -3,6 +3,8 @@
    const total = localStorage.getItem('total');
    var fName = localStorage.getItem('f-name');
    var lName = localStorage.getItem('l-name');
+   var secLeft = localStorage.getItem('sec-left');
+   var minLeft = localStorage.getItem('min-left');
 
    // console.log(count + "/ 10");
    if (score === total) {
