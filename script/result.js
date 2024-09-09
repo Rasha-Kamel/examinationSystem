@@ -10,16 +10,11 @@
     document.getElementById('full-score').innerText = `
         Congratulations
         ${fName}
+
         You Got The Full Mark
         ${score}/ ${total}
        `;
     }
     else {
-        document.getElementById('scoreImg').style.display = 'block';
-        document.getElementById('score').innerText = `
-        Hi ${fName} ${lName}
-        
-        Your Score Is : 
-        ${score}/ ${total}
-       `;
+         window.location.href = 'score.html';
    }

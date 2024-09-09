@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #f0f0f0;
+}
+
+.score-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.score-container img {
+    margin-top: 10%;
+    display: block /* Ensure the image is displayed */
+}
+
+.score-text {
+    
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Adjust the font size as needed */
+    color: #2b5353;
+
+}
