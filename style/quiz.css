@@ -148,3 +148,10 @@ aside {
   font-size: 20px;
   font-weight: bold;
 }
+
+li {
+  color: orangered;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
