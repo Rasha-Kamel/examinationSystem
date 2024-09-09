@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="./style/result.css" />
+  </head>
+  <body>
     <!-- <h1>Your Score</h1>
     <p id="score"></p> -->
-    <div class="result" style="display: none;"></div>
+    <!-- <div class="result" style="display: none;"></div>
         <img src="images/congratulations.jpeg" style="display: none;">
         <p id="score"></p><span id="result"></span>
+    </div> -->
+
+    <div class="fullmark-container">
+      <img src="images/congratulations.jpeg" alt="Congratulations Image" />
+      <div class="fullmark-text" id="full-score"></div>
+    </div>
+
+    <div class="score-container">
+        <div class="score-text" id="score"></div>
+      <img src="images/score.png" id="scoreImg" alt="Congratulations Image" />
+      
     </div>
 
     <script src="./script/result.js"></script>
-</body>
+  </body>
 </html>

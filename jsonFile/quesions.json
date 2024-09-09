@@ -43,7 +43,7 @@
         "correct_answer": "font-size"
       },
       {
-        "question": "What is the default display property of <div>?",
+        "question": "What is the default display property of &lt div &gt?",
         "options": ["inline", "block", "inline-block", "none"],
         "correct_answer": "block"
       },
